@@ -6,4 +6,10 @@ import { defineConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+   base: '/',
+  server : {
+    host: true,
+    strictPort: true,
+    port: 5046
+ }
 });
